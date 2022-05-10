@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind compoments;
+@tailwind utilities;
+
+body {
+    @apply bg-[#303030] text-zinc-100
+}
