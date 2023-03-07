@@ -8,24 +8,24 @@ import { FeedbackSuccessStep } from './Steps/FeedbackSuccessStep';
 
 export const feedBackTypes = {
     BUG: {
-        title: 'Problema',
+        title: 'Issue',
         image: {
             source: bugImageUrl,
-            alt: 'Imagem de inseto'
+            alt: 'Bug Picture'
         }
     },
     IDEA: {
-        title: 'Idéia',
+        title: 'Idea',
         image: {
             source: ideaImageUrl,
-            alt: 'Imagem de lâmpada'
+            alt: 'Lamp Picture'
         }
     },
     OTHER: {
-        title: 'Outro',
+        title: 'Other',
         image: {
             source: thoughtImageUrl,
-            alt: 'Imagem de pensamento'
+            alt: 'Thought Picture'
         }
     }
 }

@@ -1,4 +1,4 @@
-import { ArrowLeft, Camera } from "phosphor-react";
+import { ArrowLeft } from "phosphor-react";
 import { FormEvent, useState } from "react";
 import { FeedBackType, feedBackTypes } from "..";
 import { api } from "../../../lib/api";
@@ -49,7 +49,7 @@ export function FeedbackContentStep({ feedbackType, onFeedbackRestartRequested, 
 
             <form onSubmit={handleSubmitFeedback} className="my-4 w-full">
                 <textarea className="min-w-[304px] w-full min-h-[112px] text-sm placeholder-zinc-400 text-zinc-400 bg-zinc-600 bg-transparent rounded-md focus:border-brand-500 focus:ring-brand-500 focus:ring-1 resize-none focus:outline-none scrollbar scrollbar-thumb-zinc-700 scrollbar-track-transparent scrollbar-thin"
-                    placeholder="Conte com detalhes o que está acontecendo!"
+                    placeholder="Tell with details what's happenig!"
                     onChange={event => setComment(event.target.value)}
                 ></textarea>
                 <footer className="flex gap-2 mt-2">
@@ -65,7 +65,7 @@ export function FeedbackContentStep({ feedbackType, onFeedbackRestartRequested, 
                         {
                             isSendingFeedback
                                 ? <Loading />
-                                : 'Enviar Feedback'
+                                : 'Send Feedback'
                         }
 
                     </button>
